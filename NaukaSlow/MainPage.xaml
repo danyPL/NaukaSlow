@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NaukaSlow.MainPage" BackgroundColor="#E0E1DD">
+        
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="90"
+           >
+        <StackLayout VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="170">
+            <Label Text="Przetłumacz słowo na język angielski" CharacterSpacing="4" TextColor="Black" />
+        </StackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,100,0,250">
+            <VerticalStackLayout Spacing="20" >
+                    <Label Text="Ptak" x:Name="slowo" FontSize="48" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <HorizontalStackLayout Spacing="20" >
+                     <Entry x:Name="tlumaczenie" WidthRequest="200" Placeholder="test" BackgroundColor="#FFFFFF"/>
+                <Button Text="Sprawdź" BackgroundColor="#415A77" WidthRequest="100" Clicked="Sprawdz"/>
+                </HorizontalStackLayout>
+                   
+                </VerticalStackLayout>
+            
+            </HorizontalStackLayout>
+        <FlexLayout AlignContent="End" JustifyContent="SpaceAround" AlignItems="Start">
+            <Label Text="Życia: 3" x:Name="lives" TextColor="Black"/>
+            <Label Text="Przetłumaczono : 3" x:Name="SuccesCount" TextColor="Black"/>
+
+        </FlexLayout>
+        </VerticalStackLayout>
+
+</ContentPage>
