@@ -10,7 +10,7 @@
         <StackLayout VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="170">
             <Label Text="Przetłumacz słowo na język angielski" CharacterSpacing="4" TextColor="Black" />
         </StackLayout>
-            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,100,0,250">
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,100,0,200">
             <VerticalStackLayout Spacing="20" >
                     <Label Text="Ptak" x:Name="slowo" FontSize="48" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                 <HorizontalStackLayout Spacing="20" >
@@ -23,7 +23,7 @@
             </HorizontalStackLayout>
         <FlexLayout AlignContent="End" JustifyContent="SpaceAround" AlignItems="Start">
             <Label Text="Życia: 3" x:Name="lives" TextColor="Black"/>
-            <Label Text="Przetłumaczono : 3" x:Name="SuccesCount" TextColor="Black"/>
+            <Label Text="Przetłumaczono : 0" x:Name="SuccesCount" TextColor="Black"/>
 
         </FlexLayout>
         </VerticalStackLayout>
